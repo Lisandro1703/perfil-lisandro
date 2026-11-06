@@ -1,0 +1,125 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+}
+
+header {
+    background-color: #333366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    color: #333366;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333366;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: 2px solid #333366;
+    border-color: #333366;
+}
+
+.campo.invalido input,
+.campo.invalido textarea {
+    border-color: #b00020;
+}
+
+.error {
+    display: block;
+    min-height: 1.2em;
+    margin-top: 4px;
+    font-size: 0.9rem;
+    color: #b00020;
+}
+
+#enviar {
+    background-color: #333366;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#enviar:hover {
+    background-color: #24244d;
+}
+
+#enviar:disabled {
+    background-color: #8888aa;
+    cursor: wait;
+}
+
+#respuesta {
+    margin-top: 15px;
+}
+
+#respuesta.ok {
+    padding: 12px;
+    color: #1b5e20;
+    background-color: #e8f5e9;
+    border: 1px solid #a5d6a7;
+}
+
+#respuesta.fallo {
+    padding: 12px;
+    color: #b00020;
+    background-color: #fdecea;
+    border: 1px solid #f5c6cb;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 5px;
+    }
+    
+    header {
+        padding: 10px;
+    }
+    
+    section {
+        padding: 10px;
+    }
+
+    #enviar {
+        width: 100%;
+    }
+}

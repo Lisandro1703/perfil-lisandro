@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perfil de Lisandro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Perfil</h1>
+    </header>
+
+    <section>
+        <h2>Sobre Mí</h2>
+        <p>Hola, soy Lisandro Oronoz y tengo 20 años. Me gusta mucho la informática, en especial porque me encantaría aprender a hacer mis propios juegos de Pokémon. Quiero seguir metiéndome en este mundo porque sé que la informática es el futuro de la tecnología, y a lo largo de este tiempo muchas personas me han enseñado cosas muy valiosas sobre el tema. Además, me considero una persona bastante curiosa, así que siempre estoy buscando aprender y probar cosas nuevas.</p>
+    </section>
+
+    <section>
+        <h2>Experiencia</h2>
+        <p>Por ahora mi experiencia es en los trabajos de la universidad. He trabajado en equipo haciendo diapositivas para exposiciones, investigando sobre partes del computador y armando ejercicios sencillos de código cuando nos mandan tareas grupales.</p>
+    </section>
+
+    <section>
+        <h2>Educación</h2>
+        <p>Actualmente estoy cursando la carrera de Ingeniería en Informática en el IUTA. Ahí voy aprendiendo la base de la programación y la lógica, mientras por mi cuenta voy revisando tutoriales y guías para ir practicando poco a poco.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="formContacto" novalidate>
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+                <span class="error" id="error-nombre"></span>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo">
+                <span class="error" id="error-correo"></span>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                <span class="error" id="error-mensaje"></span>
+            </div>
+
+            <button type="submit" id="enviar">Enviar</button>
+        </form>
+
+        <div id="respuesta" role="status"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
